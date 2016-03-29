@@ -4,14 +4,11 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>{% show_website_info "website_name" %} - 首页</title>
-
     <link rel="shortcut icon" href="/static/img/favicon.ico">
-
-    <link rel="stylesheet" href="/static/src/css/bootstrap.min.css" />
     <script src="/static/js/lib/jquery/jquery.js"></script>
-    <script src="/static/src/js/bootstrap.min.js"></script>
-
-
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
 <!--<div id="header">-->
@@ -31,29 +28,12 @@
 
 <!--</div>-->
 <div class="nav navbar-inverse">
-        <div class="container-fluid pull-left">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">
-                    <i class="glyphicon glyphicon-heart"></i>
-                </a>
-            </div>
-        </div>
 
         <ul class="nav nav-pills pull-left">
             <li><a href="/problems/">首页</a></li>
             <li><a href="/problems">题库</a></li>
             <li><a href="/submissions">评测状态</a></li>
             <li><a href="/problems">排名</a></li>
-            <!--<li class="dropdown">-->
-                <!--<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">-->
-                    <!--比赛-->
-                    <!--<span class="caret"></span>-->
-                <!--</button>-->
-                <!--<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">-->
-                    <!--<li><a href="/contests">标准竞赛</a></li>-->
-                    <!--<li><a href="/contests">虚拟竞赛</a></li>-->
-                <!--</ul>-->
-            <!--</li>-->
             <li role="presentation" class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     比赛 <span class="caret"></span>
@@ -61,13 +41,23 @@
                 <ul class="dropdown-menu">
                     <li><a href="/contests">标准竞赛</a></li>
                     <li><a href="/contests">虚拟竞赛</a></li>
+                    <li><a href="/contests">近期竞赛</a></li>
                 </ul>
             </li>
-
             <li role="presentation"><a href="/groups">小组</a></li>
-            <li role="presentation"><a href="/about">关于</a></li>
-            <!--<li class="nav-ranklist"><a href="/OnlineJudge/ranklist">排名</a></li>-->
         </ul>
 </div>
+
+<div class="jumbotron">
+    <div class="container">
+        <h1>Hello, world!</h1>
+        <p>ACM国际大学生程序设计竞赛（英文全称：ACM International Collegiate Programming Contest（简称ACM-ICPC或ICPC））
+            是由美国计算机协会（ACM）主办的，一项旨在展示大学生创新能力、团队精神和在压力下编写程序、
+            分析和解决问题能力的年度竞赛。经过近40年的发展，ACM国际大学生程序设计竞赛已经发展成为全球最具影响力的大学生程序设计竞赛。</p>
+        <p><a class="btn btn-primary btn-lg" href="/about" role="button">About</a></p>
+    </div>
+</div>
+
+<div class="alert alert-info" role="alert" style="text-align: center">Coding the world with us  :)</div>
 </body>
 </html>
